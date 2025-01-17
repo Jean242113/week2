@@ -49,10 +49,7 @@ def find_and_print(messages, current_station):
             if is_Xiaobitan == 1:
                 distance = 0
             else:
-                distance = (
-                    abs(current_index - mrt_stations.index("Qizhang") + 1)
-                    + is_Xiaobitan
-                )
+                distance = abs(current_index - mrt_stations.index("Qizhang")) + 1
             if distance < min_distance:
                 min_distance = distance
                 nearest_friend = name

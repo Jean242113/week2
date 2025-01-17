@@ -66,7 +66,7 @@
                     if (isXiaobitan === 1) {
                         distance = 0;
                     } else {
-                        distance = Math.abs(currentIndex - mrtStations.indexOf("Qizhang") + 1) + isXiaobitan;
+                        distance = Math.abs(currentIndex - mrtStations.indexOf("Qizhang")) + 1;
                     }
                     if (distance < minDistance) {
                         minDistance = distance;
@@ -89,6 +89,7 @@
         findAndPrint(messages, "Qizhang"); // print Leslie
         findAndPrint(messages, "Ximen"); // print Bob
         findAndPrint(messages, "Xindian City Hall"); // print Vivian
+
 
         console.log(" === Task 2 ===");
         function book(consultants, hour, duration, criteria) {
